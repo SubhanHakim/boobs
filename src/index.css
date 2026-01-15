@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-butt-orange: #FF9F1C; /* Slightly lighter/brighter orange */
+  --color-butt-dark: #2D1B0E; /* Dark chocolate/brown instead of pure black for softer contrast */
+  --color-butt-white: #ffffff;
+  --color-butt-cream: #FFF4E6;
+
+  --font-sans: "Fredoka", sans-serif;
+
+  --animate-wiggle: wiggle 2s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-butt-orange text-butt-white font-sans selection:bg-butt-white selection:text-butt-orange overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .btn-meme {
+    @apply px-8 py-3 bg-white text-butt-orange rounded-full font-black text-xl 
+    border-4 border-white hover:bg-transparent hover:text-white
+    transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl cursor-pointer;
+  }
+  
+  .card-meme {
+    @apply bg-white/10 backdrop-blur-md border-2 border-white/50 rounded-3xl p-8 
+    hover:bg-white/20 transition-all duration-300 shadow-lg;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
