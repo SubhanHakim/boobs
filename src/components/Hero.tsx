@@ -74,7 +74,7 @@ export default function Hero() {
                     transition={{ delay: 0.2 }}
                     className="flex flex-col md:flex-row gap-6 mt-16 z-30"
                 >
-                    <a href="#" className="btn-meme flex items-center justify-center">
+                    <a href="https://pump.fun/coin/8mpLF2VndtaHDxBVgKJoiYQ3ycPezFNQDNq2bfWRpump" className="btn-meme flex items-center justify-center">
                         BUY NOW
                     </a>
                     <button
