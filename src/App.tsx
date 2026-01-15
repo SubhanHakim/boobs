@@ -4,6 +4,8 @@ import About from './components/About';
 import Tokenomics from './components/Tokenomics';
 import Footer from './components/Footer';
 
+import Gallery from './components/Gallery';
+
 function App() {
   return (
     <main className="font-sans bg-butt-bg min-h-screen selection:bg-butt-orange selection:text-white-900">
@@ -11,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Tokenomics />
+      <Gallery />
       <Footer />
     </main>
   );

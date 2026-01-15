@@ -19,15 +19,15 @@ export default function Navbar() {
                 $BOOBS
             </span>
             <div className="flex gap-4">
-                <a href="#" className={`px-4 py-2 rounded-full font-bold transition-all backdrop-blur-sm ${scrolled
-                        ? 'bg-white text-butt-orange hover:bg-butt-dark hover:text-white'
-                        : 'bg-white/20 text-white hover:bg-white hover:text-butt-orange'
+                <a href="https://x.com/i/communities/2011808663330308105" className={`px-4 py-2 rounded-full font-bold transition-all backdrop-blur-sm ${scrolled
+                    ? 'bg-white text-butt-orange hover:bg-butt-dark hover:text-white'
+                    : 'bg-white/20 text-white hover:bg-white hover:text-butt-orange'
                     }`}>
                     Twitter
                 </a>
                 <a href="#" className={`px-4 py-2 rounded-full font-bold transition-all backdrop-blur-sm ${scrolled
-                        ? 'bg-white text-butt-orange hover:bg-butt-dark hover:text-white'
-                        : 'bg-white/20 text-white hover:bg-white hover:text-butt-orange'
+                    ? 'bg-white text-butt-orange hover:bg-butt-dark hover:text-white'
+                    : 'bg-white/20 text-white hover:bg-white hover:text-butt-orange'
                     }`}>
                     Chart
                 </a>

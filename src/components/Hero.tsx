@@ -69,9 +69,9 @@ export default function Hero() {
                     transition={{ delay: 0.2 }}
                     className="flex flex-col md:flex-row gap-6 mt-16 z-30"
                 >
-                    <button className="btn-meme">
+                    <a href="#" className="btn-meme flex items-center justify-center">
                         BUY NOW
-                    </button>
+                    </a>
                     <button
                         onClick={copyToClipboard}
                         className="btn-meme !bg-butt-dark !text-white !border-butt-dark hover:!bg-white hover:!text-butt-dark"
