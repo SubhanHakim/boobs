@@ -1,25 +1,30 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import logo from '../assets/logo.png';
+import { Check, Copy } from 'lucide-react';
 
 const Marquee = () => (
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none select-none">
-        <div className="absolute top-12 -left-10 w-[200%] -rotate-2 bg-white text-boobs-orange text-5xl font-black whitespace-nowrap py-2">
+        <div className="absolute top-12 -left-10 w-[200%] -rotate-2 bg-white text-butt-orange text-5xl font-black whitespace-nowrap py-2">
             &nbsp;CHEST LINES • NO UTILITY • PURE VIBES • CHEST LINES • NO UTILITY • PURE VIBES • CHEST LINES • NO UTILITY • PURE VIBES •
         </div>
-        <div className="absolute bottom-24 -left-10 w-[200%] rotate-2 bg-boobs-dark text-boobs-orange text-5xl font-black whitespace-nowrap py-2">
+        <div className="absolute bottom-24 -left-10 w-[200%] rotate-2 bg-butt-dark text-butt-orange text-5xl font-black whitespace-nowrap py-2">
             &nbsp;MEME COIN • CHEST ART • ARTISTRY • MEME COIN • CHEST ART • ARTISTRY • MEME COIN • CHEST ART • ARTISTRY •
         </div>
     </div>
 );
 
 export default function Hero() {
+    const [copied, setCopied] = useState(false);
+
     const copyToClipboard = () => {
-        navigator.clipboard.writeText("80085C0in...PumpIt");
-        alert("Copied! 🍒");
+        navigator.clipboard.writeText("8mpLF2VndtaHDxBVgKJoiYQ3ycPezFNQDNq2bfWRpump");
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
     };
 
     return (
-        <section className="h-screen w-full flex flex-col justify-center items-center bg-boobs-orange relative overflow-hidden">
+        <section className="h-screen w-full flex flex-col justify-center items-center bg-butt-orange relative overflow-hidden">
             <Marquee />
 
             <div className="relative z-10 flex flex-col items-center scale-75 md:scale-100 transition-transform duration-300">
@@ -57,7 +62,7 @@ export default function Hero() {
                     <h1 className="text-[7rem] md:text-[10rem] font-black text-white leading-none tracking-tighter drop-shadow-lg">
                         $BOOBS
                     </h1>
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-boobs-orange px-6 py-1 rounded-full font-bold text-xl whitespace-nowrap shadow-lg -rotate-1">
+                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-butt-orange px-6 py-1 rounded-full font-bold text-xl whitespace-nowrap shadow-lg -rotate-1">
                         MINIMALIST • MEME • MASTERPIECE
                     </div>
                 </motion.div>
@@ -74,9 +79,17 @@ export default function Hero() {
                     </a>
                     <button
                         onClick={copyToClipboard}
-                        className="btn-meme !bg-butt-dark !text-white !border-butt-dark hover:!bg-white hover:!text-butt-dark"
+                        className="btn-meme !bg-butt-dark !text-white !border-butt-dark hover:!bg-white hover:!text-butt-dark min-w-[200px] flex items-center justify-center gap-2"
                     >
-                        COPY CA
+                        {copied ? (
+                            <>
+                                <Check size={24} /> <span>COPIED!</span>
+                            </>
+                        ) : (
+                            <>
+                                <Copy size={24} /> <span>COPY CA</span>
+                            </>
+                        )}
                     </button>
                 </motion.div>
             </div>
