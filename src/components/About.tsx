@@ -36,7 +36,7 @@ export default function About() {
                         </div>
                         <h3 className="text-4xl font-black mb-4 text-butt-dark">The Mission</h3>
                         <p className="text-xl text-butt-dark/80 font-medium leading-relaxed">
-                            $BOOBS isn't just a coin, it's a movement. A movement celebrating minimalism, creativity, and the power of simple lines on the blockchain.
+                            Let's be real. It's not about tech, it's about Tits. Everyone loves them—big ones, small ones, digital ones. We're just putting the world's favorite pair on the blockchain. Hold them, cherish them, and watch them grow.
                         </p>
                     </motion.div>
 
@@ -51,7 +51,7 @@ export default function About() {
                         </div>
                         <h3 className="text-4xl font-black mb-4 text-white">The Vision</h3>
                         <p className="text-xl text-white/90 font-medium leading-relaxed">
-                            We aim to strip away the complexity of DeFi and return to what matters: vibes, community, and aesthetically pleasing assets.
+                            We want to turn your flat wallet into a DD cup. Stop staring at those sad, flat candles. Get yourself a pair that actually bounces. Squeeze the supply, hold them with both hands, and enjoy the ride.
                         </p>
                     </motion.div>
                 </div>
